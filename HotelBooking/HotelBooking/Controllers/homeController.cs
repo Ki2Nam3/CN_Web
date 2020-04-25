@@ -42,7 +42,14 @@ namespace HotelBooking.Controllers
             return View();
         }
         //---------------------------------------------
-
+        public ActionResult KhuyenMai()
+        {
+            return View();
+        }
+        public ActionResult LienHe()
+        {
+            return View();
+        }
         //
         // GET: /home/Details/5
 
