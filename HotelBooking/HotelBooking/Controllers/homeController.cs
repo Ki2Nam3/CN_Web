@@ -50,6 +50,18 @@ namespace HotelBooking.Controllers
         {
             return View();
         }
+        //-----------------------
+
+        //----------------sơn
+        public ActionResult GioiThieu()
+        {
+            return View();
+        }
+
+        public ActionResult Gallery()
+        {
+            return View();
+        }
         //
         // GET: /home/Details/5
 

@@ -5108,6 +5108,8 @@
     <Content Include="Views\home\dvGym.cshtml" />
     <Content Include="Views\home\KhuyenMai.cshtml" />
     <Content Include="Views\home\LienHe.cshtml" />
+    <Content Include="Views\home\GioiThieu.cshtml" />
+    <Content Include="Views\home\Gallery.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
