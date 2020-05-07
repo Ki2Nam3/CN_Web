@@ -31,7 +31,7 @@ namespace HotelBooking.Controllers
         {
             return View();
         }
-
+        
         public ActionResult dvSpa()
         {
             return View();
@@ -51,7 +51,18 @@ namespace HotelBooking.Controllers
             return View();
         }
         //-----------------------
+        /*
+         Giao diện của vũ đức thắng
+         */
+        public ActionResult LoaiPhong()
+        {
+            return View();
+        }
+        public ActionResult DatPhong()
+        {
 
+            return View();
+        }
         //----------------sơn
         public ActionResult GioiThieu()
         {
@@ -147,5 +158,6 @@ namespace HotelBooking.Controllers
                 return View();
             }
         }
+        
     }
 }
