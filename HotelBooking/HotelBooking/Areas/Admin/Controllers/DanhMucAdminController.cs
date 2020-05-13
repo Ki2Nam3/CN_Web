@@ -4,77 +4,20 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
-namespace HotelBooking.Controllers
+namespace HotelBooking.Areas.Admin.Controllers
 {
-    public class homeController : Controller
+    public class DanhMucAdminController : Controller
     {
         //
-        // GET: /home/
+        // GET: /Admin/DanhMucAdmin/
 
-        //------------------giao dien cua Dang Quang Dat
         public ActionResult Index()
         {
             return View();
         }
 
-        public ActionResult DichVu()
-        {
-            return View();
-        }
-
-        public ActionResult dvNhaHang()
-        {
-            return View();
-        }
-
-        public ActionResult dvHoBoi()
-        {
-            return View();
-        }
-        
-        public ActionResult dvSpa()
-        {
-            return View();
-        }
-
-        public ActionResult dvGym()
-        {
-            return View();
-        }
-        //---------------------------------------------
-        public ActionResult KhuyenMai()
-        {
-            return View();
-        }
-        public ActionResult LienHe()
-        {
-            return View();
-        }
-        //-----------------------
-        /*
-         Giao diện của vũ đức thắng
-         */
-        public ActionResult LoaiPhong()
-        {
-            return View();
-        }
-        public ActionResult DatPhong()
-        {
-
-            return View();
-        }
-        //----------------sơn
-        public ActionResult GioiThieu()
-        {
-            return View();
-        }
-
-        public ActionResult Gallery()
-        {
-            return View();
-        }
         //
-        // GET: /home/Details/5
+        // GET: /Admin/DanhMucAdmin/Details/5
 
         public ActionResult Details(int id)
         {
@@ -82,7 +25,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // GET: /home/Create
+        // GET: /Admin/DanhMucAdmin/Create
 
         public ActionResult Create()
         {
@@ -90,7 +33,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // POST: /home/Create
+        // POST: /Admin/DanhMucAdmin/Create
 
         [HttpPost]
         public ActionResult Create(FormCollection collection)
@@ -108,7 +51,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // GET: /home/Edit/5
+        // GET: /Admin/DanhMucAdmin/Edit/5
 
         public ActionResult Edit(int id)
         {
@@ -116,7 +59,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // POST: /home/Edit/5
+        // POST: /Admin/DanhMucAdmin/Edit/5
 
         [HttpPost]
         public ActionResult Edit(int id, FormCollection collection)
@@ -134,7 +77,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // GET: /home/Delete/5
+        // GET: /Admin/DanhMucAdmin/Delete/5
 
         public ActionResult Delete(int id)
         {
@@ -142,7 +85,7 @@ namespace HotelBooking.Controllers
         }
 
         //
-        // POST: /home/Delete/5
+        // POST: /Admin/DanhMucAdmin/Delete/5
 
         [HttpPost]
         public ActionResult Delete(int id, FormCollection collection)
@@ -158,6 +101,5 @@ namespace HotelBooking.Controllers
                 return View();
             }
         }
-        
     }
 }

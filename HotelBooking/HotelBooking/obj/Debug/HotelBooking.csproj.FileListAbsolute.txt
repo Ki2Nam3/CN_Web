@@ -94,3 +94,36 @@ C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\o
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.dll.config
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.pdb
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\Antlr3.Runtime.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\Microsoft.Web.Infrastructure.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\Newtonsoft.Json.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Net.Http.Formatting.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.WebHost.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Mvc.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Optimization.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Providers.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Razor.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Deployment.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Razor.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\WebGrease.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\Newtonsoft.Json.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Net.Http.Formatting.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.WebHost.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Mvc.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Razor.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Deployment.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Razor.xml
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojAssemblyReference.cache
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CoreCompileInputs.cache
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
+D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
