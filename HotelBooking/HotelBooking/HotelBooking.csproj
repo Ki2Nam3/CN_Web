@@ -124,6 +124,8 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
+    <Compile Include="Areas\Admin\Controllers\DanhMucAdminController.cs" />
     <Compile Include="Controllers\homeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -5075,6 +5077,22 @@
     <Content Include="Content\User\Plugins\Slider\flexslider\fonts\flexslider-icon.ttf" />
     <Content Include="Content\User\Plugins\Slider\flexslider\fonts\flexslider-icon.woff" />
     <Content Include="Content\User\Plugins\Slider\flexslider\fonts\flexslider-icond41d.eot" />
+    <Content Include="Areas\Admin\Views\Web.config" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\IndexAdmin.cshtml">
+      <BrowseToURL>~/Admin/DanhMucAdmin/IndexAdmin</BrowseToURL>
+    </Content>
+    <Content Include="Areas\Admin\Views\Shared\_layoutAdmin.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\Profile.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QlyTaiKhoan.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyPhong.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyLoaiPhong.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyDichVu.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyKhachHang.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyDonDatPhong.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyKhuyenMai.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyGallery.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyLienHe.cshtml" />
+    <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyChiTietDonDatphong.cshtml" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -5116,6 +5134,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
+    <Folder Include="Areas\Admin\Models\" />
     <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>

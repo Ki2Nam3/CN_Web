@@ -1,0 +1,129 @@
+﻿@{
+    Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
+}
+
+ <div class="right_col" role="main">
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Quản lý loại phòng</h3>
+                        </div>
+                    </div>
+                    <div class="clearfix"></div>
+                    <div class="x_panel">
+                        <div class="x_content">
+                            <div id="gender" class="btn-group" data-toggle="buttons"></div>
+                            <div class="col-md-6 col-sm-6 ">
+                                <div>
+                                    <button type="button" class="btn btn-success" data-toggle="modal"
+                                        data-target="#divAddRoom" data-backdrop="static" data-keyboard="false">Thêm
+                                        </button>
+                                </div>
+
+                                <div id="divAddRoom" class="modal fade" role="dialog">
+                                    <div class="modal-dialog">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h4 class="modal-title">Type Room Management</h4>
+                                                <button type="button" class="close"
+                                                    data-dismiss="modal">&times;</button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="container">
+                                                    <div class="form-group col-md-6">
+                                                        <label>Id_Type</label>
+                                                        <textarea class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Name</label>
+                                                        <textarea class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-12">
+                                                        <label>Note</label>
+                                                        <textarea class="form-control"></textarea>
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Image</label>
+                                                        <input type="File" class="form-control" name="Roomimage"
+                                                            title="Load Image" onchange="DisplayImage(this)">
+                                                        <img id="imgRoom" height="200" width="200"
+                                                            style="border: solid">
+                                                    </div>
+                                                    <div class="form-group col-md-6">
+                                                        <label>Active</label>
+                                                        <form action="">
+                                                            <div class="col-md-4 col-sm-4 "><input type="radio" name="gender" value="Yes"> Yes<br></div>
+                                                            <div class="col-md-3 col-sm-3 "><input type="radio" name="gender" value="No"> No<br></div>
+                                                          </form>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-success">Save</button> &nbsp;
+                                                <button type="button" data-dismiss="modal"
+                                                    class="btn btn-danger">Close</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-sm-3 ">
+                                <input type="text" class="form-control" placeholder="Nhập id_room">
+                            </div>
+                            <div class="col-md-3 col-sm-3 ">
+                                <label class="btn btn-primary" data-toggle-class="btn-primary"
+                                    data-toggle-passive-class="btn-default">
+                                    <input type="radio" name="gender" value="male" class="join-btn">
+                                    &nbsp; Tìm kiếm &nbsp;
+                                </label>
+                            </div>
+
+                            <br>
+                            <br>
+                            <table style="width: 100%">
+                                <thead>
+                                    <th>
+                                        action
+                                    </th>
+                                    <th>
+                                        id_Type
+                                    </th>
+                                    <th>
+                                        Name
+                                    </th>
+                                    <th>
+                                        Note
+                                    </th>
+                                    <th>
+                                        Image
+                                    </th>
+                                    <th>
+                                        Active
+                                    </th>
+                                </thead>
+
+                                <body>
+                                    <tr>
+                                        <td>
+                                            <span id="btnDelete" class="glyphicon glyphicon-trash"></span> &nbsp; &nbsp;
+                                            <span id="btnDelete" class="glyphicon glyphicon-pencil"></span>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                        </td>
+                                        <td>
+                                            <span id="btnActive" class="glyphicon glyphicon-play"></span>
+                                        </td>
+                                    </tr>
+                                </body>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>

@@ -61,16 +61,12 @@ D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.c
 D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
 D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.dll.config
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.pdb
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\Antlr3.Runtime.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\Microsoft.Web.Infrastructure.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\Newtonsoft.Json.dll
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Net.Http.Formatting.dll
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.dll
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.WebHost.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Mvc.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Optimization.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Providers.dll
@@ -81,17 +77,11 @@ C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\b
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\WebGrease.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\Newtonsoft.Json.xml
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Net.Http.Formatting.xml
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.xml
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Http.WebHost.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Mvc.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.Razor.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Deployment.xml
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\bin\System.Web.WebPages.Razor.xml
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojAssemblyReference.cache
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CoreCompileInputs.cache
-C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
 D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\bin\HotelBooking.dll.config
@@ -127,3 +117,4 @@ D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.
 D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csproj.CopyComplete
 D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.dll
 D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.pdb
+C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojResolveAssemblyReference.cache

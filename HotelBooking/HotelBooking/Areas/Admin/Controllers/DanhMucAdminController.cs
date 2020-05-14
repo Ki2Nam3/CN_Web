@@ -11,95 +11,64 @@ namespace HotelBooking.Areas.Admin.Controllers
         //
         // GET: /Admin/DanhMucAdmin/
 
-        public ActionResult Index()
+        public ActionResult IndexAdmin()
         {
             return View();
         }
 
-        //
-        // GET: /Admin/DanhMucAdmin/Details/5
-
-        public ActionResult Details(int id)
+        public ActionResult Profile()
         {
             return View();
         }
 
-        //
-        // GET: /Admin/DanhMucAdmin/Create
-
-        public ActionResult Create()
+        public ActionResult QlyTaiKhoan()
         {
             return View();
         }
 
-        //
-        // POST: /Admin/DanhMucAdmin/Create
-
-        [HttpPost]
-        public ActionResult Create(FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add insert logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /Admin/DanhMucAdmin/Edit/5
-
-        public ActionResult Edit(int id)
+        public ActionResult QLyPhong()
         {
             return View();
         }
 
-        //
-        // POST: /Admin/DanhMucAdmin/Edit/5
-
-        [HttpPost]
-        public ActionResult Edit(int id, FormCollection collection)
-        {
-            try
-            {
-                // TODO: Add update logic here
-
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
-        }
-
-        //
-        // GET: /Admin/DanhMucAdmin/Delete/5
-
-        public ActionResult Delete(int id)
+        public ActionResult QLyLoaiPhong()
         {
             return View();
         }
 
-        //
-        // POST: /Admin/DanhMucAdmin/Delete/5
-
-        [HttpPost]
-        public ActionResult Delete(int id, FormCollection collection)
+        public ActionResult QLyDichVu()
         {
-            try
-            {
-                // TODO: Add delete logic here
+            return View();
+        }
 
-                return RedirectToAction("Index");
-            }
-            catch
-            {
-                return View();
-            }
+        public ActionResult QLyKhachHang()
+        {
+            return View();
+        }
+
+        public ActionResult QLyDonDatPhong()
+        {
+            return View();
+        }
+
+        public ActionResult QLyKhuyenMai()
+        {
+            return View();
+        }
+
+        public ActionResult QLyGallery()
+        {
+            return View();
+        }
+
+        public ActionResult QLyLienHe()
+        {
+            return View();
+        }
+
+        public ActionResult QLyChiTietDonDatphong()
+        {
+            return View();
         }
     }
 }
