@@ -3884,14 +3884,22 @@
     <Content Include="Content\User\Content\css\layout.css" />
     <Content Include="Content\User\Content\css\nivo-slider.css" />
     <Content Include="Content\User\Content\css\style.css" />
+    <Content Include="Content\User\Content\css\styleLogin.css" />
     <Content Include="Content\User\Content\images\bg-body.png" />
     <Content Include="Content\User\Content\images\bg-footer.png" />
     <Content Include="Content\User\Content\images\bg-testi.jpg" />
     <Content Include="Content\User\Content\images\flex-next.png" />
     <Content Include="Content\User\Content\images\flex-prev.png" />
+    <Content Include="Content\User\Content\images\imagesLogin\banner1.jpg" />
+    <Content Include="Content\User\Content\images\imagesLogin\fac.png" />
+    <Content Include="Content\User\Content\images\imagesLogin\l.png" />
+    <Content Include="Content\User\Content\images\imagesLogin\m.png" />
+    <Content Include="Content\User\Content\images\imagesLogin\tick.png" />
+    <Content Include="Content\User\Content\images\imagesLogin\twitter.png" />
     <Content Include="Content\User\Content\images\search-icon.png" />
     <Content Include="Content\User\Content\img-comment\facebook.png" />
     <Content Include="Content\User\Content\img-comment\youtube.png" />
+    <Content Include="Content\User\Content\js\jquery.min.js" />
     <Content Include="Content\User\Content\js\jquery.nivo.slider.pack.js" />
     <Content Include="Content\User\files\images\Article\81119049.jpg" />
     <Content Include="Content\User\files\images\Background\bgr_main.jpg" />
@@ -5093,6 +5101,7 @@
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyGallery.cshtml" />
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyLienHe.cshtml" />
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyChiTietDonDatphong.cshtml" />
+    <Content Include="Content\User\Content\images\imagesLogin\Thumbs.db" />
     <None Include="Scripts\jquery-1.7.1.intellisense.js" />
     <Content Include="Scripts\jquery-1.7.1.js" />
     <Content Include="Scripts\jquery-1.7.1.min.js" />
@@ -5131,6 +5140,8 @@
     <Content Include="Views\home\LoaiPhong.cshtml" />
     <Content Include="Views\home\DatPhong.cshtml" />
     <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\home\Login.cshtml" />
+    <Content Include="Views\home\DangKy.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
