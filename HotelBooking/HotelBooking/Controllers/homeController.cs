@@ -3,17 +3,52 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HotelBooking.Models;
+using HotelBooking.ViewModels;
 
 namespace HotelBooking.Controllers
 {
     public class homeController : Controller
     {
+        private MyDbContext context = new MyDbContext();
         //
         // GET: /home/
 
         //------------------giao dien cua Dang Quang Dat
+        public List<banner> ListBanner(){
+
+            return context.banners.Where(X => X.imageLink != null).ToList();
+        }
+
+        public List<RoomViewModel> ListRoom()
+        {
+            var model = from a in context.Rooms
+                        join b in context.ImageRooms on a.Id_Room equals b.Id_Room
+                        join c in context.RoomTypes on a.Id_Type equals c.Id_Type
+                        select new RoomViewModel()
+                        {
+                            nameType = c.Name,
+                            imageLink = b.imageLink,
+                            price = a.Price,
+                            bedAmount = c.Bed_Amount,
+                            adultAmount = c.Adult_Amount,
+                            childAmount = c.Children_Amount,
+                            size = c.Size
+                        };
+
+            return model.ToList();
+        }
+
+        public List<Promotion> ListPromotion()
+        {
+            return context.Promotions.Where(X => X.Id_Prom != null).ToList();
+        }
+
         public ActionResult Index()
         {
+            ViewBag.banners = new homeController().ListBanner();
+            ViewBag.Rooms = new homeController().ListRoom();
+            ViewBag.Promotions = new homeController().ListPromotion();
             return View();
         }
 

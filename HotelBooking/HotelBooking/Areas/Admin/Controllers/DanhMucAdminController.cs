@@ -3,12 +3,15 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HotelBooking.Models;
+using System.Data.SqlClient;
 
 namespace HotelBooking.Areas.Admin.Controllers
 {
     public class DanhMucAdminController : Controller
     {
         //
+        private MyDbContext context = new MyDbContext();
         // GET: /Admin/DanhMucAdmin/
 
         public ActionResult IndexAdmin()
@@ -43,7 +46,8 @@ namespace HotelBooking.Areas.Admin.Controllers
 
         public ActionResult QLyKhachHang()
         {
-            return View();
+            var model = new MyDbContext().Users.SqlQuery("getAllCus");
+            return View(model);
         }
 
         public ActionResult QLyDonDatPhong()

@@ -1,5 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.props" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -42,12 +43,26 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.Functions, Version=1.5.0.0, Culture=neutral, PublicKeyToken=dbe58f97a0872a64, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.Functions.1.5.0\lib\net46\EntityFramework.Functions.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
     <Reference Include="System.Web.DynamicData" />
     <Reference Include="System.Web.Entity" />
     <Reference Include="System.Web.ApplicationServices" />
@@ -60,9 +75,6 @@
     <Reference Include="System.Configuration" />
     <Reference Include="System.Web.Services" />
     <Reference Include="System.EnterpriseServices" />
-    <Reference Include="EntityFramework">
-      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
-    </Reference>
     <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <Private>True</Private>
       <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
@@ -126,11 +138,28 @@
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Compile Include="Areas\Admin\AdminAreaRegistration.cs" />
     <Compile Include="Areas\Admin\Controllers\DanhMucAdminController.cs" />
+    <Compile Include="Areas\Admin\Controllers\QlyKhachHangController.cs" />
     <Compile Include="Controllers\homeController.cs" />
+    <Compile Include="Controllers\RoomInforController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Models\banner.cs" />
+    <Compile Include="Models\Booking.cs" />
+    <Compile Include="Models\BookingDetail.cs" />
+    <Compile Include="Models\Contact.cs" />
+    <Compile Include="Models\Gallery.cs" />
+    <Compile Include="Models\ImageRoom.cs" />
+    <Compile Include="Models\ImageService.cs" />
+    <Compile Include="Models\MyDbContext.cs" />
+    <Compile Include="Models\Promotion.cs" />
+    <Compile Include="Models\Room.cs" />
+    <Compile Include="Models\RoomType.cs" />
+    <Compile Include="Models\Service.cs" />
+    <Compile Include="Models\sysdiagram.cs" />
+    <Compile Include="Models\User.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModels\RoomViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Content\Admin\content\css\custom.css" />
@@ -3931,33 +3960,33 @@
     <Content Include="Content\User\files\images\gallery\phong5.jpg" />
     <Content Include="Content\User\files\images\gallery\phong7.jpg" />
     <Content Include="Content\User\files\images\gallery\phong8.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\83973662.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong1.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong12.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong2.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong3.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong4.jpg" />
-    <Content Include="Content\User\files\images\Room\bungalow-luxury\phong5.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\80625894.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\80625895.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\80625899.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\80626001.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\83973662.jpg" />
-    <Content Include="Content\User\files\images\Room\phong-deluxe\phong3.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\80626001.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\80626002.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\83973662.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\phong3.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\phong5.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\phong6.jpg" />
-    <Content Include="Content\User\files\images\Room\suite-room\phong8.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\80625893.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\80625894.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\80626001.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\80626002.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\83973662.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\phong3.jpg" />
-    <Content Include="Content\User\files\images\Room\superior-room\phong7.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\83973662.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong1.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong12.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong2.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong3.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong4.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng luxury\phong5.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\80625894.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\80625895.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\80625899.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\80626001.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\83973662.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng deluxe\phong3.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\80626001.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\80626002.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\83973662.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\phong3.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\phong5.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\phong6.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Suite\phong8.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\80625893.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\80625894.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\80626001.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\80626002.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\83973662.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\phong3.jpg" />
+    <Content Include="Content\User\files\images\Room\Phòng Superior\phong7.jpg" />
     <Content Include="Content\User\files\_thumbs\images\DichVu\gym\gym.jpg" />
     <Content Include="Content\User\files\_thumbs\images\DichVu\hoboi\hoboi.jpg" />
     <Content Include="Content\User\files\_thumbs\images\DichVu\nhahang\nh1.jpg" />
@@ -5093,9 +5122,13 @@
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyGallery.cshtml" />
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyLienHe.cshtml" />
     <Content Include="Areas\Admin\Views\DanhMucAdmin\QLyChiTietDonDatphong.cshtml" />
-    <None Include="Scripts\jquery-1.7.1.intellisense.js" />
-    <Content Include="Scripts\jquery-1.7.1.js" />
-    <Content Include="Scripts\jquery-1.7.1.min.js" />
+    <None Include="Scripts\jquery-3.5.1.intellisense.js" />
+    <Content Include="Scripts\jquery-3.5.1.js" />
+    <Content Include="Scripts\jquery-3.5.1.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.js" />
+    <Content Include="Scripts\jquery-3.5.1.slim.min.map" />
+    <Content Include="Scripts\jquery-3.5.1.min.map" />
     <None Include="Scripts\jquery.validate-vsdoc.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.js" />
     <Content Include="Scripts\jquery-ui-1.8.20.min.js" />
@@ -5109,7 +5142,9 @@
     <Content Include="Scripts\knockout-2.1.0.js" />
     <Content Include="Scripts\modernizr-2.5.3.js" />
     <Content Include="Scripts\_references.js" />
-    <Content Include="Web.config" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </Content>
@@ -5135,7 +5170,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Areas\Admin\Models\" />
-    <Folder Include="Models\" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="packages.config" />
@@ -5168,6 +5202,14 @@
       </FlavorProperties>
     </VisualStudio>
   </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Enable NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.props')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.props'))" />
+    <Error Condition="!Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" Text="$([System.String]::Format('$(ErrorText)', '..\packages\EntityFramework.6.4.4\build\EntityFramework.targets'))" />
+  </Target>
+  <Import Project="..\packages\EntityFramework.6.4.4\build\EntityFramework.targets" Condition="Exists('..\packages\EntityFramework.6.4.4\build\EntityFramework.targets')" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">

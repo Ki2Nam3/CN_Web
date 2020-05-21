@@ -2,6 +2,9 @@
     Layout = "~/Areas/Admin/Views/Shared/_layoutAdmin.cshtml";
 }
 
+@using HotelBooking.Models;
+@model IEnumerable<User>
+
 <div class="right_col" role="main">
                 <div class="">
                     <div class="page-title">
@@ -79,6 +82,7 @@
                                     <th>
                                         action
                                     </th>
+                                    <th> idCus</th>
                                     <th>
                                         Name
                                     </th>
@@ -97,20 +101,20 @@
                                 </thead>
 
                                 <body>
+                                    @foreach(User item in Model){
                                     <tr>
                                         <td>
                                             <span id="btnDelete" class="glyphicon glyphicon-trash"></span> &nbsp; &nbsp;
                                             <span id="btnDelete" class="glyphicon glyphicon-pencil"></span>
                                         </td>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
-                                        <td>
-                                        </td>
+                                        <td>@item.Id_User</td>
+                                        <td>@item.Name</td>
+                                        <td>@item.Sex</td>
+                                        <td>@item.Email</td>
+                                        <td>@item.Address</td>
+                                        <td>@item.Phone</td>
                                     </tr>
+                                    }
                                 </body>
                             </table>
                         </div>
