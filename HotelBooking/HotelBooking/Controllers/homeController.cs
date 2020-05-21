@@ -108,6 +108,15 @@ namespace HotelBooking.Controllers
         {
             return View();
         }
+        //Loin
+        public ActionResult Login()
+        {
+            return View();
+        }
+        public ActionResult DangKy()
+        {
+            return View();
+        }
         //
         // GET: /home/Details/5
 
