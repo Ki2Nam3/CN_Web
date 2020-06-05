@@ -24,7 +24,15 @@ namespace HotelBooking.Models
 
         public bool? Active { get; set; }
 
+        [StringLength(8)]
+        public string ID_Type { get; set; }
+
+        [StringLength(200)]
+        public string Image_service { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<ImageService> ImageServices { get; set; }
+
+        public virtual ServiceType ServiceType { get; set; }
     }
 }

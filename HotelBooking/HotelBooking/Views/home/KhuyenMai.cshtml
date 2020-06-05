@@ -1,213 +1,171 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var proms = (List<HotelBooking.Models.Promotion>)ViewBag.Promotions;
 }
+@using HotelBooking.Models;
 
 
 
-            <!-- SLIDER -->
-            <div id="outerafterheader">
-                <div class="container">
-                    <div class="row">
-                        <div class="twelve columns" id="afterheader">
-                            <h1 class="pagetitle nodesc">KHUYẾN MÃI</h1>
-                        </div>
-                    </div>
-                </div>
+<title>Khuyen Mai</title>
+
+<!-- SLIDER -->
+<div id="outerafterheader">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" id="afterheader">
+                <h1 class="pagetitle nodesc">KHUYẾN MÃI</h1>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div id="outermain">
-                <div id="maincontainer">
-                    <div class="container">
-                        <div class="row">
-                            <section id="maincontent">
-                                <section id="content" class="twelve columns">
-                                    <div id="ts-portfolio">
-                                        <div class="row ">
-                                            <section class="content-detail">
-                                                <section class="eight columns positionleft">
-                                                    <article class="post">
-                                                        <div class="articlecontainer">
-                                                            <div class="postimg postimg-article">
-                                                                <img src="/Content/User/files/images/Room/phong-deluxe/80625895.jpg"
-                                                                     alt="Khuyến mãi lớn">
-                                                            </div>
-                                                            <h2 class="posttitle"><a href="#">Khuyến mãi lớn</a></h2>
-                                                            <div class="entry-content des-article">
-                                                                <p>
-                                                                    - Giảm giá 63% cho tất cả các loại phòng, chương
-                                                                    trình khuyến mãi này có hiệu lực đến ngày
-                                                                    09/04/2020.
-                                                                    <br />
-                                                                    - Khách hàng được quyền thay đổi hoặc hủy bỏ một
-                                                                    tuần trước khi đến mà không bị tính phí.
-                                                                </p>
-                                                                <div class="clear"></div>
-                                                                <a href="#" class="more">Chi tiết</a>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <br />
-                                                    </article>
-                                                    <article class="post">
-                                                        <div class="articlecontainer">
-                                                            <div class="postimg postimg-article">
-                                                                <img src="/Content/User/files/images/Room/phong-deluxe/80625894.jpg"
-                                                                     alt="Khuyến m&#227;i m&#249;a h&#232; 2018">
-                                                            </div>
-                                                            <h2 class="posttitle">
-                                                                <a href="#">
-                                                                    Khuyến
-                                                                    mãi mùa hè 2018
-                                                                </a>
-                                                            </h2>
-                                                            <div class="entry-content des-article">
-                                                                <p>
-                                                                    - Với hệ thống Grand Hotel, bạn không chỉ tận hưởng
-                                                                    trải nghiệm kỳ nghỉ tuyệt vời với những trải nghiệm
-                                                                    thú vị
-                                                                </p>
-                                                                <div class="clear"></div>
-                                                                <a href="#" class="more">Chi tiết</a>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <br />
-                                                    </article>
-                                                    <article class="post">
-                                                        <div class="articlecontainer">
-                                                            <div class="postimg postimg-article">
-                                                                <img src="/Content/User/files/images/Room/phong-deluxe/80626001.jpg"
-                                                                     alt="Khuyến mãi thành lập khách sạn Grand hotel">
-                                                            </div>
-                                                            <h2 class="posttitle">
-                                                                <a href="#">
-                                                                    Khuyến
-                                                                    mãi thành lập khách sạn Grand hotel
-                                                                </a>
-                                                            </h2>
-                                                            <div class="entry-content des-article">
-                                                                <p>
-                                                                    - Đến với Grand Hotel, bạn sẽ không chỉ tận hưởng kỳ
-                                                                    nghỉ tuyệt vời với những trải nghiệm thú vị mà còn
-                                                                    tận hưởng các chương trình khuyến mãi cực kỳ hấp dẫn
-                                                                    của khu nghỉ mát
-                                                                </p>
-                                                                <div class="clear"></div>
-                                                                <a href="#" class="more">Chi tiết</a>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                        <br />
-                                                    </article>
-                                                    <!-- end post -->
-                                                </section>
-                                                <section>
-                                                    <aside id="sidebar" class="four columns positionright">
-                                                        <div class="widget-area">
-                                                            <ul>
-                                                                <li id="text-3" class="widget-container widget_text">
-                                                                    <div class="wrap-mode-check">
-                                                                        <h3 class="widget-title">
-                                                                            Đặt phòng khách sạn
-                                                                        </h3>
-                                                                        <div id="wrap-check-one">
-                                                                            <form id="check-room">
-                                                                                <div class="av-check-time">
-                                                                                    <span>Ngày đến:</span> <input class="checkdate" id="Arrive"
-                                                                                                                  type="text">
-                                                                                </div>
-                                                                                <div class="av-check-time">
-                                                                                    <span>Ngày đi: </span> <input class="checkdate" id="Depart"
-                                                                                                                  type="text">
-                                                                                </div>
-                                                                                <div class="av-persion">
-                                                                                    <div class="av-item-pertion">
+<div id="outermain">
+    <div id="maincontainer">
+        <div class="container">
+            <div class="row">
+                <section id="maincontent">
+                    <section id="content" class="twelve columns">
+                        <div id="ts-portfolio">
+                            <div class="row ">
+                                <section class="content-detail">
+                                    <section class="eight columns positionleft">
+                                        @foreach (Promotion item in proms)
+                                        {
+                                            <article class="post">
 
-                                                                                        <span>Người lớn:</span>
-                                                                                        <select id="av-adult"
-                                                                                                name="Adult">
-                                                                                            <option>1</option>
-                                                                                            <option>2</option>
-                                                                                            <option>3</option>
-                                                                                            <option>4</option>
-                                                                                            <option>5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                    <div class="av-item-pertion">
-                                                                                        <span>Trẻ em:</span>
-                                                                                        <select id="av-child"
-                                                                                                name="Child">
-                                                                                            <option>0</option>
-                                                                                            <option>1</option>
-                                                                                            <option>2</option>
-                                                                                            <option>3</option>
-                                                                                            <option>4</option>
-                                                                                            <option>5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <input type="submit" id="av-buton"
-                                                                                       value="Tìm phòng trống"
-                                                                                       class="btn btn-primary"
-                                                                                       style=" padding: 9px 20px; margin-top: 10px; width: 100%" />
-                                                                            </form>
+                                                <div class="articlecontainer">
+
+                                                    <div class="postimg postimg-article">
+                                                        <img src="/Content/User/files/images/Room/phong-deluxe/@item.ImageLink"
+                                                             alt="Khuyến mãi lớn">
+                                                    </div>
+                                                    <h2 class="posttitle"><a href="#">Khuyến mãi lớn</a></h2>
+                                                    <div class="entry-content des-article">
+                                                        <p>
+                                                            @item.Detail
+                                                            <br />
+                                                            - Khách hàng được quyền thay đổi hoặc hủy bỏ một
+                                                            tuần trước khi đến mà không bị tính phí.
+                                                        </p>
+                                                        <div class="clear"></div>
+                                                        <a href="#" class="more">Chi tiết</a>
+                                                    </div>
+                                                    <div class="clear"></div>
+
+                                                </div>
+
+                                                <br />
+                                            </article>
+                                        }
+                                        <!-- end post -->
+                                    </section>
+
+                                    <section>
+                                        <aside id="sidebar" class="four columns positionright">
+                                            <div class="widget-area">
+                                                <ul>
+                                                    <li id="text-3" class="widget-container widget_text">
+                                                        <div class="wrap-mode-check">
+                                                            <h3 class="widget-title">
+                                                                Đặt phòng khách sạn
+                                                            </h3>
+                                                            <div id="wrap-check-one">
+                                                                <form id="check-room">
+                                                                    <div class="av-check-time">
+                                                                        <span>Ngày đến:</span> <input class="checkdate" id="Arrive"
+                                                                                                      type="text">
+                                                                    </div>
+                                                                    <div class="av-check-time">
+                                                                        <span>Ngày đi: </span> <input class="checkdate" id="Depart"
+                                                                                                      type="text">
+                                                                    </div>
+                                                                    <div class="av-persion">
+                                                                        <div class="av-item-pertion">
+
+                                                                            <span>Người lớn:</span>
+                                                                            <select id="av-adult"
+                                                                                    name="Adult">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="av-item-pertion">
+                                                                            <span>Trẻ em:</span>
+                                                                            <select id="av-child"
+                                                                                    name="Child">
+                                                                                <option>0</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                            </select>
                                                                         </div>
                                                                     </div>
-                                                                    <style>
-                                                                        .av-check-time,
-                                                                        .av-persion,
-                                                                        .av-item-pertion {
-                                                                            margin-bottom: 8px;
-                                                                        }
-
-                                                                        #check-room span {
-                                                                            display: block;
-                                                                            width: 86px;
-                                                                            float: left;
-                                                                        }
-
-                                                                        #check-room input.checkdate,
-                                                                        #check-room select {
-                                                                            padding: 5px 10px;
-                                                                            padding: 5px 10px;
-                                                                            background: #ffffff;
-                                                                            color: #121212;
-                                                                            border: 1px solid #cacaca;
-                                                                        }
-                                                                    </style>
-
-                                                                    <script>
-                                                                        $(document).ready(function () {
-                                                                            var getdate = new Date();
-                                                                            var arrive = getdate;
-                                                                            var depart = new Date();
-                                                                            depart.setDate(getdate.getDate() + 1);
-                                                                            console.log(depart);
-                                                                            $("#Arrive").val($.datepicker.formatDate('mm/dd/yy', arrive));
-                                                                            $("#Depart").val($.datepicker.formatDate('mm/dd/yy', depart));
-                                                                            $("#Arrive").datepicker({
-                                                                                minDate: arrive,
-                                                                            });
-                                                                            $("#Depart").datepicker({
-                                                                                minDate: depart,
-                                                                            });
-                                                                        });
-                                                                    </script>
-
-                                                                </li>
-                                                            </ul>
+                                                                    <input type="submit" id="av-buton"
+                                                                           value="Tìm phòng trống"
+                                                                           class="btn btn-primary"
+                                                                           style=" padding: 9px 20px; margin-top: 10px; width: 100%" />
+                                                                </form>
+                                                            </div>
                                                         </div>
-                                                    </aside>
-                                                    <div class="clear"></div>
-                                                </section>
-                                        </div>
+                                                        <style>
+                                                            .av-check-time,
+                                                            .av-persion,
+                                                            .av-item-pertion {
+                                                                margin-bottom: 8px;
+                                                            }
+
+                                                            #check-room span {
+                                                                display: block;
+                                                                width: 86px;
+                                                                float: left;
+                                                            }
+
+                                                            #check-room input.checkdate,
+                                                            #check-room select {
+                                                                padding: 5px 10px;
+                                                                padding: 5px 10px;
+                                                                background: #ffffff;
+                                                                color: #121212;
+                                                                border: 1px solid #cacaca;
+                                                            }
+                                                        </style>
+
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                var getdate = new Date();
+                                                                var arrive = getdate;
+                                                                var depart = new Date();
+                                                                depart.setDate(getdate.getDate() + 1);
+                                                                console.log(depart);
+                                                                $("#Arrive").val($.datepicker.formatDate('mm/dd/yy', arrive));
+                                                                $("#Depart").val($.datepicker.formatDate('mm/dd/yy', depart));
+                                                                $("#Arrive").datepicker({
+                                                                    minDate: arrive,
+                                                                });
+                                                                $("#Depart").datepicker({
+                                                                    minDate: depart,
+                                                                });
+                                                            });
+                                                        </script>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
                                         <div class="clear"></div>
-                                    </div>
-                                </section>
-                            </section>
+                                    </section>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </div>
-            <!-- END MAIN CONTENT -->
-            
+        </div>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->

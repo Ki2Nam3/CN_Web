@@ -15,8 +15,7 @@ namespace HotelBooking.Models
 
         public string Content { get; set; }
 
-        [StringLength(8)]
-        public string Id_Customer { get; set; }
+        public int? Id_Customer { get; set; }
 
         public virtual User User { get; set; }
     }

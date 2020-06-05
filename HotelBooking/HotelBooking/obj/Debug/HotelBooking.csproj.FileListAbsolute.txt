@@ -120,3 +120,5 @@ D:\git test\nam3\CN_Web\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.
 C:\Users\FPTSHOP\Documents\Visual Studio 2019\CN_Web\HotelBooking\HotelBooking\obj\Debug\HotelBooking.csprojResolveAssemblyReference.cache
 D:\Ki2_Năm3\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.SqlServer.dll
 D:\Ki2_Năm3\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.SqlServer.xml
+D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.SqlServer.dll
+D:\Hoc ky 6\web\btnhom\CN_Web\HotelBooking\HotelBooking\bin\EntityFramework.SqlServer.xml

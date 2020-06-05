@@ -14,5 +14,7 @@ namespace HotelBooking.ViewModels
         public string adultAmount { get; set; }
         public string childAmount { get; set; }
         public int? size { get; set; }
+        public string url { get; set; }
+
     }
 }

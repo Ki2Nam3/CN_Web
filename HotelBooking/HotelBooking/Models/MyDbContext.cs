@@ -1,4 +1,4 @@
-﻿namespace HotelBooking.Models
+namespace HotelBooking.Models
 {
     using System;
     using System.Data.Entity;
@@ -8,7 +8,7 @@
     public partial class MyDbContext : DbContext
     {
         public MyDbContext()
-            : base("name=MyDbContext")
+            : base("name=MyDbContext5")
         {
         }
 
@@ -19,10 +19,12 @@
         public virtual DbSet<Gallery> Galleries { get; set; }
         public virtual DbSet<ImageRoom> ImageRooms { get; set; }
         public virtual DbSet<ImageService> ImageServices { get; set; }
+        public virtual DbSet<Introduce> Introduces { get; set; }
         public virtual DbSet<Promotion> Promotions { get; set; }
         public virtual DbSet<Room> Rooms { get; set; }
         public virtual DbSet<RoomType> RoomTypes { get; set; }
         public virtual DbSet<Service> Services { get; set; }
+        public virtual DbSet<ServiceType> ServiceTypes { get; set; }
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<User> Users { get; set; }
 
@@ -38,10 +40,6 @@
 
             modelBuilder.Entity<Booking>()
                 .Property(e => e.Id_Booking)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Booking>()
-                .Property(e => e.Id_Customer)
                 .IsUnicode(false);
 
             modelBuilder.Entity<BookingDetail>()
@@ -68,10 +66,6 @@
 
             modelBuilder.Entity<Contact>()
                 .Property(e => e.Id_Contact)
-                .IsUnicode(false);
-
-            modelBuilder.Entity<Contact>()
-                .Property(e => e.Id_Customer)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Gallery>()
@@ -104,6 +98,14 @@
 
             modelBuilder.Entity<ImageService>()
                 .Property(e => e.Id_Service)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Introduce>()
+                .Property(e => e.Id)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Introduce>()
+                .Property(e => e.imageLink)
                 .IsUnicode(false);
 
             modelBuilder.Entity<Promotion>()
@@ -144,8 +146,16 @@
                 .Property(e => e.Id_Service)
                 .IsUnicode(false);
 
-            modelBuilder.Entity<User>()
-                .Property(e => e.Id_User)
+            modelBuilder.Entity<Service>()
+                .Property(e => e.ID_Type)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<Service>()
+                .Property(e => e.Image_service)
+                .IsUnicode(false);
+
+            modelBuilder.Entity<ServiceType>()
+                .Property(e => e.ID_Type)
                 .IsUnicode(false);
 
             modelBuilder.Entity<User>()

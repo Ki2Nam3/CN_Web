@@ -5,7 +5,7 @@
 
 <html>
 <head>
-    <title>Login</title>
+    <title>Sign Up</title>
     <script src="/Content/User/Content/js/jquery.min.js"></script>
     <!-- Custom Theme files -->
     <link href="/Content/User/Content/css/styleLogin.css" rel="stylesheet" type="text/css" />
@@ -23,16 +23,14 @@
 
                     <div class="header-left-bottom agileinfo">
 
-                        <form action="#" method="post">
-                            <input type="text" value="User name" name="name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}" />
-                            <input type="password" value="Password" name="password" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}" />
-                            <div class="remember">
-                                <span class="checkbox1">
-                                    <label class="checkbox"><input type="checkbox" name="" checked=""><i> </i>Remember me</label>
-                                </span>
-
-                                <div class="clear"> </div>
-                            </div>
+                        <form method="post">
+                            <input type="text" value="User name" name="UserName" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'User name';}" />
+                            <input type="password" value="Password" name="PassWord" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'password';}" />
+                            <input type="text" value="Name" name="Name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Name';}" />
+                            <input type="text" value="sex" name="Sex" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Sex';}" />
+                            <input type="text" value="Email" name="Email" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Email';}" />
+                            <input type="text" value="Address" name="Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Address';}" />
+                            <input type="text" value="Phone" name="Phone" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Phone';}" />
 
                             <input type="submit" value="Sign Up">
                         </form>
@@ -44,6 +42,7 @@
             </div>
         </div>
     </div>
+
     <!--header end here-->
     <div class="copyright">
         <p>

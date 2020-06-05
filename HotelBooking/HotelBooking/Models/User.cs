@@ -16,8 +16,7 @@ namespace HotelBooking.Models
         }
 
         [Key]
-        [StringLength(8)]
-        public string Id_User { get; set; }
+        public int Id_User { get; set; }
 
         [StringLength(30)]
         public string Name { get; set; }
@@ -28,8 +27,7 @@ namespace HotelBooking.Models
         [StringLength(30)]
         public string PassWord { get; set; }
 
-        [StringLength(50)]
-        public string Sex { get; set; }
+        public bool? Sex { get; set; }
 
         [StringLength(50)]
         public string Email { get; set; }

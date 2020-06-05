@@ -1,204 +1,171 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    var introduce = (List<HotelBooking.Models.Introduce>)ViewBag.Introduces;
+
+
 }
 
+@using HotelBooking.Models;
+<title>Gioi Thieu</title>
 
-            <!-- SLIDER -->
 
-
-            <div id="outerafterheader">
-                <div class="container">
-                    <div class="row">
-                        <div class="twelve columns" id="afterheader">
-                            <h1 class="pagetitle nodesc">Welcome to Grand Hotel</h1>
-                        </div>
-                    </div>
-                </div>
+<div id="outerafterheader">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" id="afterheader">
+                <h1 class="pagetitle nodesc">Welcome to Grand Hotel</h1>
             </div>
+        </div>
+    </div>
+</div>
 
-            <div id="outermain">
-                <div id="maincontainer">
-                    <div class="container">
-                        <div class="row">
-                            <section id="maincontent">
-                                <section id="content" class="twelve columns">
-                                    <div id="ts-portfolio">
-                                        <div class="row ">
-                                            <section class="single content-detail">
-                                                <section class="eight columns positionleft">
-                                                    <article class="post">
-                                                        <div class="articlecontainer">
-                                                            <div class="postimg" style="margin-bottom: 0px;">
-                                                                <img src="/Content/User/files/images/Article/81119049.jpg"
-                                                                     class="img-avata-post" alt="Welcome to Grand Hotel">
-                                                            </div>
-                                                            <div class="entry-content" style="padding-top: 20px;">
-                                                                <p style="text-align:justify">
-                                                                    GrandHotel là một khách
-                                                                    sạn sang trọng, đẳng cấp hàng đầu tại Việt Nam. Đến
-                                                                    với Grand Hotel, bạn không chỉ được đắm mình trong
-                                                                    cuộc sống vương giả với đầy đủ tiện nghi, dịch vụ
-                                                                    chuyên nghiệp, chất lượng hàng đầu mà còn cảm nhận
-                                                                    được không khí ấm cúng, thoải mái và dễ chịu như
-                                                                    gia đình ngay tại nhà.<br />
-                                                                    <br />
-                                                                    Grand hotel là một nơi an toàn, thân thiện cho mọi
-                                                                    người khi ở Hà Nội. Tọa lạc tại một vị trí đắc địa,
-                                                                    ngay trung tâm thành phố, dễ dàng đến các điểm du
-                                                                    lịch của Hà Nội, khách sạn có thể dễ dàng đến tất cả
-                                                                    các điểm du lịch nổi tiếng. Đây cũng là một điểm đến
-                                                                    lý tưởng nhờ dịch vụ cao cấp được cung cấp bởi khách
-                                                                    sạn. Tất cả các phòng đều được thiết kế theo phong
-                                                                    cách hiện đại pha trộn giữa kiến ​​trúc cổ điển, độc
-                                                                    đáo, hài hòa giữa vẻ đẹp truyền thống của người Việt
-                                                                    và sự tinh tế của phương Tây. Đội ngũ nhân viên
-                                                                    khách sạn là những nhân viên giàu kinh nghiệm,
-                                                                    chuyên nghiệp và nhiệt tình, không ngừng nâng cao
-                                                                    các kỹ năng và chất lượng chuyên nghiệp, luôn sẵn
-                                                                    sàng phục vụ khách hàng với phương châm "mang lại
-                                                                    giá trị cốt lõi cho khách hàng".<br />
-                                                                    <br />
-                                                                    Điểm nổi bật của khách sạn Grand chúng tôi là hệ
-                                                                    thống nhà hàng phục vụ chuyên nghiệp mang đậm chất
-                                                                    Á-Âu với nhà hàng thương hiệu Grand hotel. Ngay tại
-                                                                    đây, bạn có thể thưởng thức những món ăn đặc biệt
-                                                                    với hương vị tuyệt vời nhất theo phong cách châu Á,
-                                                                    được chế biến từ những nguyên liệu tươi ngon nhất
-                                                                    dưới sự kiểm tra nghiêm ngặt để đảm bảo an toàn cho
-                                                                    thực phẩm. Sản phẩm dưới bàn tay khéo léo của đội
-                                                                    ngũ đầu bếp giàu kinh nghiệm.<br />
-                                                                    <br />
-                                                                    Ngoài ra, trong thời gian lưu trú tại khách sạn, bạn
-                                                                    cũng có thể tận hưởng các tiện nghi tại chỗ miễn phí
-                                                                    như phòng tập thể dục, spa, hồ bơi, ... Công việc
-                                                                    hàng ngày, thói quen hàng ngày, sức khỏe và sức khỏe
-                                                                    của bạn là Duy trì tại nhà.<br />
-                                                                    <br />
-                                                                    Tuyệt vời, thoải mái và ấn tượng là những cảm giác
-                                                                    mà du khách nhận xét về khách sạn Grand sau thời
-                                                                    gian ở đây và đó cũng là điều chúng tôi - những
-                                                                    người có duyên phục vụ bạn cảm thấy tự hào nhất. Với
-                                                                    những dịch vụ uy tín và chất lượng được xây dựng từ
-                                                                    những nỗ lực bền bỉ nhất, Grand Hotel cam kết mang
-                                                                    đến cho bạn chất lượng cuộc sống cao nhất, những
-                                                                    khoảnh khắc đẹp nhất, hạnh phúc nhất, kỳ nghỉ nhất
-                                                                    của bạn là kỷ niệm mãi mãi không bao giờ quên.
-                                                                </p>
-                                                            </div>
-                                                            <div class="clear"></div>
-                                                        </div>
-                                                    </article>
-                                                    <div class="clear"></div>
-                                                    <!-- end post -->
-                                                </section>
-                                                <section>
-                                                    <aside id="sidebar" class="four columns positionright">
-                                                        <div class="widget-area">
-                                                            <ul>
-                                                                <li id="text-3" class="widget-container widget_text">
-                                                                    <div class="wrap-mode-check">
-                                                                        <h3 class="widget-title">
-                                                                            Đặt phòng khách sạn
-                                                                        </h3>
-                                                                        <div id="wrap-check-one">
-                                                                            <form id="check-room">
-                                                                                <div class="av-check-time">
-                                                                                    <span>Ngày đến:</span> <input class="checkdate" id="Arrive"
-                                                                                                                  type="text">
-                                                                                </div>
-                                                                                <div class="av-check-time">
-                                                                                    <span>Ngày đi: </span> <input class="checkdate" id="Depart"
-                                                                                                                  type="text">
-                                                                                </div>
-                                                                                <div class="av-persion">
-                                                                                    <div class="av-item-pertion">
+<div id="outermain">
+    <div id="maincontainer">
+        <div class="container">
+            <div class="row">
+                <section id="maincontent">
+                    <section id="content" class="twelve columns">
+                        <div id="ts-portfolio">
+                            <div class="row ">
+                                <section class="single content-detail">
+                                    <section class="eight columns positionleft">
+                                        <article class="post">
+                                            <div class="articlecontainer">
+                                                @foreach (Introduce item in introduce)
+                                                {
+                                                    <div class="postimg" style="margin-bottom: 0px;">
+                                                        <img src="~/Content/User/files/images/Article/@item.imageLink"
+                                                             class="img-avata-post" alt="Welcome to Grand Hotel">
+                                                    </div>
+                                                    <div class="entry-content" style="padding-top: 20px;">
+                                                        <p style="text-align:justify">
 
-                                                                                        <span>Người lớn:</span>
-                                                                                        <select id="av-adult"
-                                                                                                name="Adult">
-                                                                                            <option>1</option>
-                                                                                            <option>2</option>
-                                                                                            <option>3</option>
-                                                                                            <option>4</option>
-                                                                                            <option>5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                    <div class="av-item-pertion">
-                                                                                        <span>Trẻ em:</span>
-                                                                                        <select id="av-child"
-                                                                                                name="Child">
-                                                                                            <option>0</option>
-                                                                                            <option>1</option>
-                                                                                            <option>2</option>
-                                                                                            <option>3</option>
-                                                                                            <option>4</option>
-                                                                                            <option>5</option>
-                                                                                        </select>
-                                                                                    </div>
-                                                                                </div>
-                                                                                <input type="submit" id="av-buton"
-                                                                                       value="Tìm phòng trống"
-                                                                                       class="btn btn-primary"
-                                                                                       style=" padding: 9px 20px; margin-top: 10px; width: 100%" />
-                                                                            </form>
+                                                            @item.note1
+                                                            <br />
+                                                            <br />
+                                                            @item.note2<br />
+                                                            <br />
+                                                            @item.note3<br />
+                                                            <br />
+                                                            @item.note4<br />
+                                                            <br />
+                                                            @item.note5
+                                                        </p>
+                                                    </div>
+                                                }
+                                                <div class="clear"></div>
+                                            </div>
+                                        </article>
+                                        <div class="clear"></div>
+                                        <!-- end post -->
+                                    </section>
+                                    <section>
+                                        <aside id="sidebar" class="four columns positionright">
+                                            <div class="widget-area">
+                                                <ul>
+                                                    <li id="text-3" class="widget-container widget_text">
+                                                        <div class="wrap-mode-check">
+                                                            <h3 class="widget-title">
+                                                                Đặt phòng khách sạn
+                                                            </h3>
+                                                            <div id="wrap-check-one">
+                                                                <form id="check-room">
+                                                                    <div class="av-check-time">
+                                                                        <span>Ngày đến:</span> <input class="checkdate" id="Arrive"
+                                                                                                      type="text">
+                                                                    </div>
+                                                                    <div class="av-check-time">
+                                                                        <span>Ngày đi: </span> <input class="checkdate" id="Depart"
+                                                                                                      type="text">
+                                                                    </div>
+                                                                    <div class="av-persion">
+                                                                        <div class="av-item-pertion">
+
+                                                                            <span>Người lớn:</span>
+                                                                            <select id="av-adult"
+                                                                                    name="Adult">
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                            </select>
+                                                                        </div>
+                                                                        <div class="av-item-pertion">
+                                                                            <span>Trẻ em:</span>
+                                                                            <select id="av-child"
+                                                                                    name="Child">
+                                                                                <option>0</option>
+                                                                                <option>1</option>
+                                                                                <option>2</option>
+                                                                                <option>3</option>
+                                                                                <option>4</option>
+                                                                                <option>5</option>
+                                                                            </select>
                                                                         </div>
                                                                     </div>
-                                                                    <style>
-                                                                        .av-check-time,
-                                                                        .av-persion,
-                                                                        .av-item-pertion {
-                                                                            margin-bottom: 8px;
-                                                                        }
-
-                                                                        #check-room span {
-                                                                            display: block;
-                                                                            width: 86px;
-                                                                            float: left;
-                                                                        }
-
-                                                                        #check-room input.checkdate,
-                                                                        #check-room select {
-                                                                            padding: 5px 10px;
-                                                                            padding: 5px 10px;
-                                                                            background: #ffffff;
-                                                                            color: #121212;
-                                                                            border: 1px solid #cacaca;
-                                                                        }
-                                                                    </style>
-
-                                                                    <script>
-                                                                        $(document).ready(function () {
-                                                                            var getdate = new Date();
-                                                                            var arrive = getdate;
-                                                                            var depart = new Date();
-                                                                            depart.setDate(getdate.getDate() + 1);
-                                                                            console.log(depart);
-                                                                            $("#Arrive").val($.datepicker.formatDate('mm/dd/yy', arrive));
-                                                                            $("#Depart").val($.datepicker.formatDate('mm/dd/yy', depart));
-                                                                            $("#Arrive").datepicker({
-                                                                                minDate: arrive,
-                                                                            });
-                                                                            $("#Depart").datepicker({
-                                                                                minDate: depart,
-                                                                            });
-                                                                        });
-                                                                    </script>
-
-                                                                </li>
-                                                            </ul>
+                                                                    <input type="submit" id="av-buton"
+                                                                           value="Tìm phòng trống"
+                                                                           class="btn btn-primary"
+                                                                           style=" padding: 9px 20px; margin-top: 10px; width: 100%" />
+                                                                </form>
+                                                            </div>
                                                         </div>
-                                                    </aside>
-                                                </section>
-                                                <div class="clear"></div>
-                                            </section>
-                                        </div>
-                                        <div class="clear"></div>
-                                    </div>
+                                                        <style>
+                                                            .av-check-time,
+                                                            .av-persion,
+                                                            .av-item-pertion {
+                                                                margin-bottom: 8px;
+                                                            }
+
+                                                            #check-room span {
+                                                                display: block;
+                                                                width: 86px;
+                                                                float: left;
+                                                            }
+
+                                                            #check-room input.checkdate,
+                                                            #check-room select {
+                                                                padding: 5px 10px;
+                                                                padding: 5px 10px;
+                                                                background: #ffffff;
+                                                                color: #121212;
+                                                                border: 1px solid #cacaca;
+                                                            }
+                                                        </style>
+
+                                                        <script>
+                                                            $(document).ready(function () {
+                                                                var getdate = new Date();
+                                                                var arrive = getdate;
+                                                                var depart = new Date();
+                                                                depart.setDate(getdate.getDate() + 1);
+                                                                console.log(depart);
+                                                                $("#Arrive").val($.datepicker.formatDate('mm/dd/yy', arrive));
+                                                                $("#Depart").val($.datepicker.formatDate('mm/dd/yy', depart));
+                                                                $("#Arrive").datepicker({
+                                                                    minDate: arrive,
+                                                                });
+                                                                $("#Depart").datepicker({
+                                                                    minDate: depart,
+                                                                });
+                                                            });
+                                                        </script>
+
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </aside>
+                                    </section>
+                                    <div class="clear"></div>
                                 </section>
-                            </section>
+                            </div>
+                            <div class="clear"></div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                </section>
             </div>
-            <!-- END MAIN CONTENT -->
-            
+        </div>
+    </div>
+</div>
+<!-- END MAIN CONTENT -->

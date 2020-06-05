@@ -1,0 +1,225 @@
+﻿@{
+    ViewBag.Title = "Suite";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<title>phong Suite</title>
+
+<link href="/Content/User/Plugins/Slider/flexslider/flexslider.css" rel="stylesheet" />
+<script src="/Content/User/Plugins/Slider/flexslider/jquery.flexslider-min.js"></script>
+
+<div id="outerafterheader">
+    <div class="container">
+        <div class="row">
+            <div class="twelve columns" id="afterheader">
+                <h1 class="pagetitle">Suite Room</h1>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div id="outermain">
+    <div id="maincontainer">
+        <div class="container">
+            <div class="row">
+                <section id="maincontent">
+                    <section id="content" class="eight columns positionleft">
+                        <article>
+                            <div class="articlecontainer">
+                                <div id="roomslider" class="flexslider">
+                                    <ul class="slides">
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/80626002.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/80626001.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/phong8.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/phong6.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/phong5.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/83973662.jpg"></li>
+                                        <li><img src="/Content/User/files/images/Room/phong-Suite/phong3.jpg"></li>
+                                    </ul>
+                                    <div class="clear"></div>
+                                </div>
+                                <div class="entry-content" style="margin-top: 50px;">
+                                    <table border="0" cellpadding="8" cellspacing="0" style="width:100%">
+                                        <tbody>
+                                            <tr>
+                                                <td style="width:50%">
+                                                    <ul>
+                                                        <li>Area of 70m<sup>2</sup></li>
+                                                        <li>Living room with leather lounge</li>
+                                                        <li>Kingsize bed with blanket, sheet, feather pillow 100% cotton</li>
+                                                        <li>Sony 40 inch LCD TV</li>
+                                                        <li>Wifi and free internet</li>
+                                                        <li>Desk</li>
+                                                        <li>Two-way air conditioning with large capacity</li>
+                                                    </ul>
+                                                </td>
+                                                <td style="width:50%">
+                                                    <ul>
+                                                        <li>Tea table with free tea and coffee</li>
+                                                        <li>Minibar and soft drinks</li>
+                                                        <li>Room service</li>
+                                                        <li>International direct dial telephone</li>
+                                                        <li>Bathtub with shower and hot and cold water system</li>
+                                                        <li>Free parking is available at the hotel</li>
+                                                    </ul>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+
+                                </div>
+                                <div class="entry-content">
+                                    <a class="button" href="/booking">Book Now</a>
+                                </div>
+                                <div class="clear"></div>
+                            </div>
+                        </article>
+                        <section class="other-content" style="float: left">
+                            <div id="ts-portfolio">
+                                <div class="row">
+                                    <br />
+                                    <h2 class="h2-other">Other Rooms</h2>
+                                    <div class="item one_third columns item-other">
+                                        <div class="ts-pf-img">
+                                            <a href="/Rooms  Rates/6/phong-deluxe">
+                                                <img src="/Content/User/files/images/Room/phong-deluxe/80625895.jpg" alt="Ph&#242;ng Deluxe">
+                                            </a>
+                                        </div>
+                                        <div class="ts-pf-text">
+                                            <h3 class="pftitle"><a href="/Rooms  Rates/6/phong-deluxe" title="Ph&#242;ng Deluxe">Ph&#242;ng Deluxe</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="item one_third columns item-other">
+                                        <div class="ts-pf-img">
+                                            <a href="/Rooms  Rates/7/superior-room">
+                                                <img src="/Content/User/files/images/Room/phong-Superior/80625893.jpg" alt="Superior Room">
+                                            </a>
+                                        </div>
+                                        <div class="ts-pf-text">
+                                            <h3 class="pftitle"><a href="/Rooms  Rates/7/superior-room" title="Superior Room">Superior Room</a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="item one_third columns item-other">
+                                        <div class="ts-pf-img">
+                                            <a href="/Rooms  Rates/8/bungalow-luxury">
+                                                <img src="/Content/User/files/images/Room/phong-luxury/phong1.jpg" alt="Bungalow Luxury ">
+                                            </a>
+                                        </div>
+                                        <div class="ts-pf-text">
+                                            <h3 class="pftitle"><a href="/Rooms  Rates/8/bungalow-luxury" title="Bungalow Luxury ">Bungalow Luxury </a></h3>
+                                        </div>
+                                    </div>
+                                    <div class="clear"></div>
+                                </div>
+                            </div>
+                            <div class="clear"></div>
+                        </section>
+                    </section>
+                    <section>
+                        <aside id="sidebar" class="four columns positionright">
+                            <div class="widget-area">
+                                <ul>
+                                    <li id="text-3" class="widget-container widget_text">
+
+
+                                        <div class="wrap-mode-check">
+                                            <h3 class="widget-title">Make A Reservation</h3>
+                                            <div id="wrap-check-one">
+                                                <form id="check-room" action="/booking" method="GET">
+                                                    <div class="av-check-time">
+                                                        <span>Check In:</span> <input class="checkdate" id="Arrive" name="Arrive" readonly="readonly" type="text">
+
+                                                    </div>
+                                                    <div class="av-check-time">
+                                                        <span>Check Out: </span> <input class="checkdate" id="Depart" name="Depart" readonly="readonly" type="text">
+                                                    </div>
+                                                    <div class="av-persion">
+                                                        <div class="av-item-pertion">
+
+                                                            <span>Adults:</span>
+                                                            <select id="av-adult" name="Adult">
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+
+                                                        </div>
+                                                        <div class="av-item-pertion">
+                                                            <span>Child:</span>
+                                                            <select id="av-child" name="Child">
+                                                                <option>0</option>
+                                                                <option>1</option>
+                                                                <option>2</option>
+                                                                <option>3</option>
+                                                                <option>4</option>
+                                                                <option>5</option>
+                                                            </select>
+                                                        </div>
+                                                    </div>
+                                                    <input type="submit" id="av-buton" value="Search Availability" class="btn btn-primary" style=" padding: 9px 20px; margin-top: 10px; width: 100%" />
+                                                </form>
+                                            </div>
+                                        </div>
+                                        <style>
+                                            .av-check-time, .av-persion, .av-item-pertion {
+                                                margin-bottom: 8px;
+                                            }
+
+                                            #check-room span {
+                                                display: block;
+                                                width: 86px;
+                                                float: left;
+                                            }
+
+                                            #check-room input.checkdate, #check-room select {
+                                                padding: 5px 10px;
+                                                padding: 5px 10px;
+                                                background: #ffffff;
+                                                color: #121212;
+                                                border: 1px solid #cacaca;
+                                            }
+                                        </style>
+
+                                        <script>
+                                            $(document).ready(function () {
+                                                var getdate = new Date();
+                                                var arrive = getdate;
+                                                var depart = new Date();
+                                                depart.setDate(getdate.getDate() + 1);
+                                                console.log(depart);
+                                                $("#Arrive").val($.datepicker.formatDate('mm/dd/yy', arrive));
+                                                $("#Depart").val($.datepicker.formatDate('mm/dd/yy', depart));
+                                                $("#Arrive").datepicker({
+                                                    minDate: arrive,
+                                                });
+                                                $("#Depart").datepicker({
+                                                    minDate: depart,
+                                                });
+                                            });
+                                        </script>
+
+                                    </li>
+                                </ul>
+                            </div>
+
+
+                        </aside>
+                    </section>
+                </section>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    $(document).ready(function () {
+        $('#roomslider').flexslider({
+            animation: "fade",
+            slideshow: true,
+            nextText: "",
+            prevText: "",
+        });
+    });
+</script>

@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
+using HotelBooking.Common;
 using HotelBooking.Models;
 using HotelBooking.ViewModels;
 
@@ -19,7 +20,7 @@ namespace HotelBooking.Controllers
 
             return context.banners.Where(X => X.imageLink != null).ToList();
         }
-
+   
         public List<RoomViewModel> ListRoom()
         {
             var model = from a in context.Rooms
@@ -33,7 +34,8 @@ namespace HotelBooking.Controllers
                             bedAmount = c.Bed_Amount,
                             adultAmount = c.Adult_Amount,
                             childAmount = c.Children_Amount,
-                            size = c.Size
+                            size = c.Size,
+                            url = c.Note,
                         };
 
             return model.ToList();
@@ -43,7 +45,28 @@ namespace HotelBooking.Controllers
         {
             return context.Promotions.Where(X => X.Id_Prom != null).ToList();
         }
+        public List<Introduce> ListIntro()
+        {
+            return context.Introduces.Where(X => X.Id != null).ToList();
+        }
+        public List<Gallery> ListGall()
+        {
+            return context.Galleries.Where(X => X.Id_Glr != null).ToList();
+        }
+        public List<ServiceViewModel> ListService()
+        {
+            var model = from services in context.Services
 
+                        join service_type in context.ServiceTypes on services.ID_Type equals service_type.ID_Type
+                        select new ServiceViewModel()
+                        {
+                            name_type = service_type.Name,
+                            content_Service = service_type.Content_Service,
+                            name = services.Name,
+                            image_services = services.Image_service
+                        };
+            return model.ToList();
+        }
         public ActionResult Index()
         {
             ViewBag.banners = new homeController().ListBanner();
@@ -54,35 +77,48 @@ namespace HotelBooking.Controllers
 
         public ActionResult DichVu()
         {
+            ViewBag.Service = new homeController().ListService();
+
             return View();
         }
 
         public ActionResult dvNhaHang()
         {
-            return View();
+            var model = new MyDbContext().ImageServices.Where(X => X.Id_Service == "MDV04");
+
+            return View(model);
         }
 
         public ActionResult dvHoBoi()
         {
-            return View();
+            var model = new MyDbContext().ImageServices.Where(X => X.Id_Service == "MDV03");
+
+            return View(model);
         }
         
         public ActionResult dvSpa()
         {
-            return View();
+            var model = new MyDbContext().ImageServices.Where(X => X.Id_Service == "MDV01");
+
+            return View(model);
         }
 
         public ActionResult dvGym()
         {
-            return View();
+            var model = new MyDbContext().ImageServices.Where(X => X.Id_Service == "MDV02").ToList();
+
+            return View(model);
         }
         //---------------------------------------------
         public ActionResult KhuyenMai()
         {
+            ViewBag.promotions = new homeController().ListPromotion();
             return View();
         }
         public ActionResult LienHe()
         {
+           //aseController base = new BaseController();
+            
             return View();
         }
         //-----------------------
@@ -91,6 +127,7 @@ namespace HotelBooking.Controllers
          */
         public ActionResult LoaiPhong()
         {
+            ViewBag.Rooms = new homeController().ListRoom();
             return View();
         }
         public ActionResult DatPhong()
@@ -101,25 +138,94 @@ namespace HotelBooking.Controllers
         //----------------sơn
         public ActionResult GioiThieu()
         {
+            ViewBag.Introduces= new homeController().ListIntro();
+            
             return View();
         }
 
         public ActionResult Gallery()
         {
+            ViewBag.Gallerys = new homeController().ListGall();
             return View();
         }
+        //===============================================================
         //Loin
         public ActionResult Login()
         {
             return View();
         }
+        public ActionResult LoginUser(LoginModel model)
+        {
+           if(ModelState.IsValid)
+           {   
+            var dao = new UserDao();
+            var result = dao.Login(model.UserName, model.Password);
+            if(result)
+            {
+                    var user = dao.GetID(model.UserName);
+                    var session = new SessionLogin();
+                    session.UserName = user.UserName;
+                    session.UserID = user.Id_User;
+                    Session.Add(UserSession.SessionU,session);
+             
+                    return RedirectToAction("Index", "home");
+            }   
+            else
+            {
+                ModelState.AddModelError("", "Đăng nhập sai .");
+            }    
+           }  
+            return View("Login");
+        }
+        [HttpGet]
         public ActionResult DangKy()
         {
             return View();
         }
+
+        [HttpPost]
+        public ActionResult DangKy(User taiKhoan)
+        {
+            if(ModelState.IsValid)
+            {
+                var dao = new UserDao();
+                var id = dao.Insert(taiKhoan);
+                if(id != null )
+                {
+                    return RedirectToAction("Login", "Home");
+
+                }    
+            } 
+            else
+            {
+                ModelState.AddModelError("", "Thất Bại hãy đăng ký lại !!");
+            }    
+         
+            return View("Login");
+        }
+
+        //========================== Chi tiết phòng
+        public ActionResult Luxury()
+        {
+            return View();
+        }
+        public ActionResult deluxe()
+        {
+            return View();
+        }
+        public ActionResult Superior()
+        {
+            return View();
+        }
+        public ActionResult Suite()
+        {
+            return View();
+        }
+
+
         //
         // GET: /home/Details/5
-
+        //==============================================================
         public ActionResult Details(int id)
         {
             return View();
